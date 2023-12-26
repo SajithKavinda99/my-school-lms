@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <link rel="stylesheet" href="1-grade.css">
+
+</head>
+<body>
+
+    <div class="head">
+        <div class="head-one">
+            <img class="logo" src="logo.jpg" width="200px">
+        </div>
+        <div class="head-two"><h2>E-Learning Management System<br>
+            A/Palagala Maha Vidhuhala<br>Palagala<br>6 Grade<br></h2>
+        </div>
+      </div>
+    <br>
+
+    <div class="tab">
+        <button style="font-size: 30px;" class="tablinks" onclick="openCity(event, 'end-exam')" id="defaultOpen">End Exam</button>
+        <button style="font-size: 30px;"  class="tablinks" onclick="openCity(event, 'mid-exam')">Mid Exam</button>
+        <button style="font-size: 30px;"  class="tablinks" onclick="openCity(event, 'activity')">Activity</button>
+      </div>
+      
+      <div id="end-exam" class="tabcontent">
+        <h3>End Exam</h3>
+        <p>End Exam is Very easy</p>
+      </div>
+      
+      <div id="mid-exam" class="tabcontent">
+        <h3>Mid Exam</h3>
+        <p>Mid Exam is Very Easy</p> 
+      </div>
+      
+      <div id="activity" class="tabcontent">
+        <h3>Activity</h3>
+        <p>Activity is very easy.</p>
+      </div>
+      
+      <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+
+</body>
+</html>
