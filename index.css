@@ -14,7 +14,7 @@
 
 .head-one{
   padding: 10px;
-  flex: 20%;
+  flex: 10%;
   border-style: inset;
   border-color: green;
   border-radius: 40px;
@@ -30,6 +30,16 @@
   border-style: inset;
   border-color: green;
   background-color: lightseagreen;
+  border-radius: 40px;
+  margin-left: 10px;
+}
+.head-three {
+  padding: 10px;
+  flex: 10%;
+  border-style: inset;
+  border-style: inset;
+  border-color: green;
+  background-color: rgba(32, 178, 171, 0);
   border-radius: 40px;
   margin-left: 10px;
 }
@@ -58,7 +68,7 @@
   text-align: left;
 }
 .singup{
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0);
   padding: 10px;
   flex: 50%;
   border-style: inset;
